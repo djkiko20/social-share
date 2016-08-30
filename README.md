@@ -43,16 +43,18 @@ Add *Share* => *Chencha\Share\ShareFacade* to aliases array in *config/app.php*
 
 Generate OG Meta data
 
-Share::generateMeta(
+	Share::generateMeta(
         'http://www.example.com',
         'website',
         'My example',
-        'http:/www.example.com/img/header-bg.jpg',
+        'http://www.example.com/img/header-bg.jpg',
         'Example.com',
-        'Some description about the page');
+        'Some description about the page'
+    );
 
-Definition of `generateMeta()` function is:
-generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = '')
+	Definition of `generateMeta()` function is:
+	
+	generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = '')
 
 Get a link (example with Twitter)
 
