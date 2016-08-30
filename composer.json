@@ -16,7 +16,7 @@
     {
       "name": "Hristian Ilioski",
       "email": "hristian.ilioski@gmail.com"
-    },
+    }
   ],
   "require": {
     "php": ">=5.4.0",
