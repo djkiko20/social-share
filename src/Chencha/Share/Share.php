@@ -50,6 +50,17 @@ class Share {
 		return $return;
 	}
 
+	public function generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = ''){
+		$prepareOGmetadata =  '<meta property="og:url" content="'.$url.'" />';
+		$prepareOGmetadata .= '<meta property="og:type" content="'.$type.'" />';
+		$prepareOGmetadata .= '<meta property="og:title" content="'.$title.'" />';
+		$prepareOGmetadata .= '<meta property="og:image" content="'.$image.'" />';
+		$prepareOGmetadata .= '<meta property="og:site_name" content="'.$site_name.'" />';
+		$prepareOGmetadata .= '<meta property="og:description" content="'.$description.'" />';
+
+		return $prepareOGmetadata;
+	}
+
     protected function generateUrl($serviceId) {
         $vars = [
             'service' => $this->app->config->get("social-share.services.$serviceId", []),

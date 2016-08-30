@@ -1,8 +1,8 @@
 # Share
 
-Share links with Laravel 5
+Share links with Laravel 5 and meta generator
 
-This is a fork to John's share for Laravel 4. 
+This is a fork to Checha share for Laravel 5. 
  
 ## Services available
 
@@ -27,7 +27,7 @@ This is a fork to John's share for Laravel 4.
 
 Step 1 : Install Composer dependency
 
-    composer require chencha/share
+    composer require hilioski/social-share-and-meta-generator
 
 Step 2 : Register the Service Provider
 
@@ -40,6 +40,19 @@ Add *Share* => *Chencha\Share\ShareFacade* to aliases array in *config/app.php*
 
 
 ## Usage
+
+Generate OG Meta data
+
+Share::generateMeta(
+        'http://www.example.com',
+        'website',
+        'My example',
+        'http:/www.example.com/img/header-bg.jpg',
+        'Example.com',
+        'Some description about the page');
+
+Definition of `generateMeta()` function is:
+generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = '')
 
 Get a link (example with Twitter)
 
