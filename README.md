@@ -52,8 +52,8 @@ Generate OG Meta data
         'Some description about the page'
     );
 
-	Definition of `generateMeta()` function is:
-	
+Definition of `generateMeta()` function is:
+
 	generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = '')
 
 Get a link (example with Twitter)
