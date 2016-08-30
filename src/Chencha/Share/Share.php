@@ -50,7 +50,7 @@ class Share {
 		return $return;
 	}
 
-	public function generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = ''){
+	public static function generateMeta($url = '', $type = 'website', $title = '', $image = '', $site_name = '', $description = ''){
 		$prepareOGmetadata =  '<meta property="og:url" content="'.$url.'" />';
 		$prepareOGmetadata .= '<meta property="og:type" content="'.$type.'" />';
 		$prepareOGmetadata .= '<meta property="og:title" content="'.$title.'" />';
