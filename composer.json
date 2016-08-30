@@ -1,8 +1,12 @@
 {
-  "name": "chencha/share",
-  "description": "Share links with Laravel 5",
+  "name": "hilioski/social-share-and-meta-generator",
+  "description": "Share links with Laravel 5 and meta generator",
   "keywords": [
+    "social",
     "share",
+    "meta",
+    "generator",
+    "og",
     "laravel",
     "laravel5"
   ],
@@ -10,17 +14,9 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "thujohn",
-      "email": "jonathan.thuau@gmail.com"
+      "name": "Hristian Ilioski",
+      "email": "hristian.ilioski@gmail.com"
     },
-    {
-      "name": "chencha",
-      "email": "jacob@chenchatech.com"
-    },
-    {
-      "name": "datashaman",
-      "email": "marlinf@datashaman.com"
-    }
   ],
   "require": {
     "php": ">=5.4.0",
